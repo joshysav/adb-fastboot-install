@@ -3,14 +3,14 @@
 #  ADB Uninstall.sh
 #  
 #  This script works on Linux and Mac OS X.
-#  This script removed adb and fastboot from /bin/
+#  This script removed adb and fastboot from usr/bin/
 #
 #  Created by kalaker on 4/21/12.
 echo "About to removed ADB and Fastboot"
 echo "We're accessing protected directories, please type your password."
-sudo rm /bin/adb #Removes adb
+sudo rm /usr/bin/adb #Removes adb
 echo "ADB removed"
-sudo rm /bin/fastboot #Removes fastboot
+sudo rm /usr/bin/fastboot #Removes fastboot
 echo "Fastboot removed"
 echo "Removing rules"
 sudo rm /etc/udev/rules.d/51-android.rules #Removes rules
