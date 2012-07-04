@@ -15,10 +15,10 @@ echo "This will install ADB and Fastboot on your computer."
 echo "Root Permissions required. Please type your password."
 sudo cd ~ #Gives Superuser permissions
 cd "`dirname "$0"`" #CDs to script directory
+echo "Changed directory to `pwd`" #Informs user of path change
 echo "Installing JDK (Not really necessary, but helpful for future)."
 sudo add-apt-repository ppa:sun-java-community-team/sun-java6; sudo apt-get update; sudo apt-get install sun-java6-jre sun-java6-bin sun-java6-jdk
 echo "JDK Installed"
-echo "Changed directory to `pwd`" #Informs user of path change
 echo "Moving ADB"
 sudo mv Linux/adb_Linux /usr/bin/adb #Moves adb
 echo "ADB Moved to /usr/bin/adb"
